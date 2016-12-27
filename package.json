@@ -1,0 +1,28 @@
+{
+  "name": "update-query",
+  "description": "Update the query string of a url with the given object",
+  "author": "Ken Berkeley <kenberkeley@foxmail.com>",
+  "version": "1.0.0",
+  "main": "src/update-query.js",
+  "scripts": {
+    "test": "ava",
+    "cov": "nyc ava",
+    "build": "browserify index.js -s updateQuery | uglifyjs -o dist/update-query.min.js"
+  },
+  "keywords": [
+    "query",
+    "string",
+    "qs",
+    "update"
+  ],
+  "dependencies": {
+    "query-string": "^4.2.3"
+  },
+  "devDependencies": {
+    "ava": "^0.17.0",
+    "browserify": "^13.1.1",
+    "nyc": "^10.0.0",
+    "uglify-js": "^2.7.5"
+  },
+  "license": "MIT"
+}
