@@ -1,4 +1,4 @@
-# updateQuery({url:String}, Object)
+# updateQuery(url, Object)
 
 [![npm version][npm-v-img]][npm-url]
 [![npm download][npm-dl-img]][npm-url]
@@ -8,9 +8,8 @@
 
 ### Installation
 
-```
-npm i update-query -S
-```
+`npm i update-query -S`  
+> alternatively：`<script src="dist/update-query.min.js"></script>`
 
 ### Usage
 ```
