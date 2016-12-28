@@ -2,7 +2,7 @@
   "name": "update-query",
   "description": "Update the query string of a url with the given object",
   "author": "Ken Berkeley <kenberkeley@foxmail.com>",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "main": "src/update-query.js",
   "scripts": {
     "test": "ava",

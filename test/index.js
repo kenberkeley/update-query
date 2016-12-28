@@ -2,10 +2,10 @@ import test from 'ava'
 import updateQuery from '../'
 
 const url1 = 'test.com'
-const url2 = 'test.com?a=1&b=2'
+const url2 = 'test.com?a=0&b=1'
 
 test('add new query', t => {
-  t.is(updateQuery(url1, { a: 1, b: 2 }), 'test.com?a=1&b=2')
+  t.is(updateQuery(url1, { a: 0, b: 1 }), url2)
 })
 
 test('update query', t => {
