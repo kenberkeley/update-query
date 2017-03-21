@@ -2,7 +2,7 @@
   "name": "update-query",
   "description": "Update the query string of a url with the given object",
   "author": "Ken Berkeley <kenberkeley@foxmail.com>",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "scripts": {
     "test": "ava",
     "cov": "nyc ava",
@@ -19,6 +19,7 @@
     "update"
   ],
   "dependencies": {
+    "object-assign": "^4.1.1",
     "query-string": "^4.2.3"
   },
   "devDependencies": {

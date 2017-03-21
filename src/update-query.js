@@ -1,4 +1,5 @@
 var qs = require('query-string'),
+  assign = require('object-assign'),
   objectTrim = require('./utils/object-trim');
 
 /**
@@ -13,7 +14,7 @@ module.exports = function updateQuery(url, obj) {
     curQs = _url[1];
 
   var newQs = qs.stringify(
-    objectTrim(Object.assign(qs.parse(curQs), obj)),
+    objectTrim(assign(qs.parse(curQs), obj)),
     { encode: false }
   );
   return newQs ? path + '?' + newQs : path;

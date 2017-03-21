@@ -4,5 +4,5 @@
  * @return {Boolean}
  */
 module.exports = function isEmpty(entity) {
-  return entity === 0 ? false : !entity;
+  return entity === 0 ? 0 : !entity;
 };
